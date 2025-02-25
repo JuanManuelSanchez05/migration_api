@@ -32,6 +32,11 @@ def get_date_value(date_str, default=FECHA_DEFECTO):
     except Exception:
         return default
 
+@app.route('/')
+def home():
+    return jsonify({"message": "API funcionando correctamente"}), 200
+
+
 @app.route('/upload/<string:file_type>', methods=['POST'])
 def upload_csv(file_type):
     if 'file' not in request.files:
