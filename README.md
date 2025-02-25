@@ -31,7 +31,7 @@ migration_api/ ├── app/ │ ├── init.py │ ├── models.py │ 
 - Flask
 - Flask-SQLAlchemy
 - pandas
-- (Opcional) SQLite (ya que se utiliza como base de datos para desarrollo)
+- SQLite 
 
 Puedes instalar las dependencias con:
 ```bash
